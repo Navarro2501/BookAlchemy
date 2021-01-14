@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Book</title>
+</head>
+<body>
+    <form method="POST" action='{{url_for("add")}}' novalidate>
+        <b>{{form.name.label}}</b>
+        <b>{{form.name}}</b>
+        <b>{{form.author.label}}</b>
+        <b>{{form.author}}</b>
+        <b>{{form.rating.label}}</b>
+        <b>{{form.rating}}</b>
+        {{form.submit}}
+    </form>        
+</body>
+</html>
